@@ -1,0 +1,7 @@
+{
+  "input": {
+    "job_id": "test-job-001",
+    "source_image_key": "sources/test-source.jpg",
+    "target_video_key": "targets/test-target.mp4"
+  }
+}

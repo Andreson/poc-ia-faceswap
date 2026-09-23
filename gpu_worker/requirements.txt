@@ -1,0 +1,20 @@
+# REQ-OPS-001 — worker dependencies. Install inside .venv (CLAUDE.md Rule #2).
+
+torch>=2.1.0
+torchvision>=0.16.0
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
+insightface>=0.7.3
+onnxruntime-gpu>=1.16.0
+ffmpeg-python>=0.2.0
+
+# CodeFormer has no PyPI package; enhancer.py wraps its architecture (basicsr)
+# and face crop/paste-back helper (facexlib) directly instead.
+basicsr>=1.4.2
+facexlib>=0.3.0
+
+# RunPod Serverless SDK — handler entrypoint (REQ-AI-012), added in Phase 4
+runpod>=1.6.0
+
+# R2 / S3-compatible storage client (used by the Phase 4 handler for download/upload)
+boto3>=1.34.0
