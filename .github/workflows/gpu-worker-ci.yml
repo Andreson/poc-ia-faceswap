@@ -1,5 +1,4 @@
 name: GPU Worker CI
-
 on:
   push:
     branches: [main, master]
